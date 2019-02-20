@@ -381,6 +381,8 @@ def anytime_gbfs(initial_state, heur_fn, timebound = 10):
 
 if __name__ == "__main__":
   anytime_gbfs(PROBLEMS[0], heur_alternate, timebound = 10)
+  weight = 10
+  anytime_weighted_astar(PROBLEMS[0], heur_alternate, weight, timebound = 10)
   
   
 
